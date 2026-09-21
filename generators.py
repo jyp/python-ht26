@@ -1,3 +1,8 @@
+def naturals():
+    n = 0
+    while True:
+        yield n
+        n = n + 1
 
 def naturals_from_two():
     n = 2
@@ -20,14 +25,5 @@ def primes():
           found_primes.append(i)
           yield i
 
-for i in primes():
+for i in zip(range(10), naturals_from_two(), primes()):
     print (i)
-
-
-    # def every_other(generator):
-    # flag = True
-    # for n in generator:
-    #     flag = not flag
-    #     if flag:
-    #         yield n
-
