@@ -1,4 +1,5 @@
-# Matrices with mutation
+# Matrices with mutation.
+# No sharing between rows.
 
 def zero(m,n):
     result = []
